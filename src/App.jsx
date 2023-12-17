@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
@@ -10,17 +8,9 @@ function App() {
     <>
       <div>
         <a href="https://otterclub.io" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+          <img src={"/img/otter_club_logo.png"} className="logo" alt="Otter Club logo" />
         </a>
       </div>
-      <h1>Otter Club</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
     </>
   );
 }
