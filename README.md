@@ -1,8 +1,19 @@
-# React + Vite
+<img width="1493" alt="image" src="https://github.com/otter-club/.github/assets/4829591/77181ca4-214d-43b6-abc8-51c6097c638c">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🦦 獭坞游戏工作室 
 
-Currently, two official plugins are available:
+* 官网: [otterclub.io](https://otterclub.io/)
+* Facebook: [otter.club.game](facebook.com/otter.club.game)
+* GitHub：[otter-club](https://github.com/otter-club)
+* Discord: [discord.gg/YWE6yFK5Bv](https://discord.gg/YWE6yFK5Bv)
+* Twitter: [@OtterClub_](https://twitter.com/OtterClub_)
+* QQ群: 831197219
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 👏 Welcome to Otter Club
+
+* Homepage: [otterclub.io](https://otterclub.io/)
+* Facebook: [otter.club.game](facebook.com/otter.club.game)
+* GitHub：[otter-club](https://github.com/otter-club)
+* Discord: [discord.gg/YWE6yFK5Bv](https://discord.gg/YWE6yFK5Bv)
+* Twitter: [@OtterClub_](https://twitter.com/OtterClub_)
+* QQ Group: 831197219
