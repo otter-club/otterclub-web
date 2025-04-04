@@ -3,6 +3,7 @@ import Link from "next/link";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { FaFacebook, FaGithub, FaDiscord, FaQq } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { MdAlternateEmail } from "react-icons/md";
 
 export default function Home() {
   return (
@@ -37,6 +38,12 @@ export default function Home() {
             target="_blank"
             className="hover:text-[#D6CEC0] transition-colors duration-300">
             <AiOutlineGlobal />
+          </Link>
+          <Link
+            href="mailto:contact@otterclub.io"
+            target="_blank"
+            className="hover:text-[#D6CEC0] transition-colors duration-300">
+            <MdAlternateEmail />
           </Link>
           <Link
             href="https://facebook.com/otter.club.game"
