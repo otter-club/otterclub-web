@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { AiOutlineGlobal } from "react-icons/ai";
+import { FaFacebook, FaGithub, FaDiscord, FaQq } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Home() {
   return (
@@ -28,8 +31,43 @@ export default function Home() {
           <Link href="https://discord.gg/otterclub" target="_blank"></Link>
         </div>
 
-        <div>
-          
+        <div className="flex gap-4 items-center justify-center text-3xl ">
+          <Link
+            href="https://otterclub.io/"
+            target="_blank"
+            className="hover:text-[#D6CEC0] transition-colors duration-300">
+            <AiOutlineGlobal />
+          </Link>
+          <Link
+            href="https://facebook.com/otter.club.game"
+            target="_blank"
+            className="hover:text-[#D6CEC0] transition-colors duration-300">
+            <FaFacebook />
+          </Link>{" "}
+          <Link
+            href="https://github.com/otter-club"
+            target="_blank"
+            className="hover:text-[#D6CEC0] transition-colors duration-300">
+            <FaGithub />
+          </Link>
+          <Link
+            href="https://discord.gg/YWE6yFK5Bv"
+            target="_blank"
+            className="hover:text-[#D6CEC0] transition-colors duration-300">
+            <FaDiscord />
+          </Link>
+          <Link
+            href="https://twitter.com/OtterClub_"
+            target="_blank"
+            className="hover:text-[#D6CEC0] transition-colors duration-300">
+            <FaXTwitter />
+          </Link>
+          <Link
+            href="https://otterclub.io/"
+            target="_blank"
+            className="hover:text-[#D6CEC0] transition-colors duration-300">
+            <FaQq />
+          </Link>
         </div>
 
         <div className="hidden md:flex gap-4 items-center flex-col sm:flex-row">
