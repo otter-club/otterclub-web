@@ -11,7 +11,7 @@ export default function Home() {
       <main className="flex flex-col gap-8 items-center justify-center grow">
         <Link href="/">
           <Image
-            className="hover:shadow-[0_0_300px_#9f6d4a] transition-shadow duration-300 rounded-full"
+            className="hover:shadow-[0_0_300px_#9f6d4a] transition-shadow duration-300 rounded-full size-36 md:size-64"
             src="/img/otter_club_logo.png"
             alt="Otter Club logo"
             width={256}
@@ -24,11 +24,11 @@ export default function Home() {
           <h1 className="text-2xl font-bold">Otter Club</h1>
           <p>Where whiskers meet wonder!</p>
           <p>
-            {`We’re a splashy squad of otter developers crafting cozy indie games—full of playful puzzles, hand-painted
+            {`We're a splashy squad of otter developers crafting cozy indie games—full of playful puzzles, hand-painted
             adventures, and heartwarming stories. Dive into worlds made with paws, passion, and a pinch of riverbank
             mischief! 🌊✨`}
           </p>
-          <p>{`Let’s make waves, one game at a time!`}</p>
+          <p>{`Let's make waves, one game at a time!`}</p>
           <Link href="https://discord.gg/otterclub" target="_blank"></Link>
         </div>
 
@@ -36,45 +36,48 @@ export default function Home() {
           <Link
             href="https://otterclub.io/"
             target="_blank"
-            className="hover:text-[#D6CEC0] transition-colors duration-300">
+            className="hover:text-[#D6CEC0] transition-colors duration-300"
+            title="Website">
             <AiOutlineGlobal />
           </Link>
           <Link
             href="mailto:contact@otterclub.io"
             target="_blank"
-            className="hover:text-[#D6CEC0] transition-colors duration-300">
+            className="hover:text-[#D6CEC0] transition-colors duration-300"
+            title="Email">
             <MdAlternateEmail />
           </Link>
           <Link
             href="https://facebook.com/otter.club.game"
             target="_blank"
-            className="hover:text-[#D6CEC0] transition-colors duration-300">
+            className="hover:text-[#D6CEC0] transition-colors duration-300"
+            title="Facebook">
             <FaFacebook />
           </Link>{" "}
           <Link
             href="https://github.com/otter-club"
             target="_blank"
-            className="hover:text-[#D6CEC0] transition-colors duration-300">
+            className="hover:text-[#D6CEC0] transition-colors duration-300"
+            title="GitHub">
             <FaGithub />
           </Link>
           <Link
             href="https://discord.gg/YWE6yFK5Bv"
             target="_blank"
-            className="hover:text-[#D6CEC0] transition-colors duration-300">
+            className="hover:text-[#D6CEC0] transition-colors duration-300"
+            title="Discord">
             <FaDiscord />
           </Link>
           <Link
             href="https://twitter.com/OtterClub_"
             target="_blank"
-            className="hover:text-[#D6CEC0] transition-colors duration-300">
+            className="hover:text-[#D6CEC0] transition-colors duration-300"
+            title="Twitter">
             <FaXTwitter />
           </Link>
-          <Link
-            href="https://otterclub.io/"
-            target="_blank"
-            className="hover:text-[#D6CEC0] transition-colors duration-300">
+          <div className="cursor-pointer hover:text-[#D6CEC0] transition-colors duration-300" title="QQ Group: 831197219">
             <FaQq />
-          </Link>
+          </div>
         </div>
 
         <div className="hidden md:flex gap-4 items-center flex-col sm:flex-row">
