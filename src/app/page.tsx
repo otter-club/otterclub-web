@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div className="flex flex-col items-center justify-items-center min-h-screen p-8 md:pb-20 gap-16 font-[family-name:var(--font-geist-sans)]">
+      <main className="flex flex-col gap-8 items-center justify-center grow">
         <Link href="/">
           <Image
             className="hover:shadow-[0_0_300px_#9f6d4a] transition-shadow duration-300 rounded-full"
@@ -16,8 +16,8 @@ export default function Home() {
           />
         </Link>
 
-        <div>
-          <h1>Otter Club</h1>
+        <div className="list-inside list-decimal w-full max-w-[400px] md:max-w-[650px] text-sm text-left font-[family-name:var(--font-geist-mono)]">
+          <h1 className="text-2xl font-bold">Otter Club</h1>
           <p>Where whiskers meet wonder!</p>
           <p>
             {`We’re a splashy squad of otter developers crafting cozy indie games—full of playful puzzles, hand-painted
