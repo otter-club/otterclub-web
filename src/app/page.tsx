@@ -28,6 +28,10 @@ export default function Home() {
           <Link href="https://discord.gg/otterclub" target="_blank"></Link>
         </div>
 
+        <div>
+          
+        </div>
+
         <div className="hidden md:flex gap-4 items-center flex-col sm:flex-row">
           <iframe src="https://store.steampowered.com/widget/2616200/Miss_Peacock/" width="646" height="190"></iframe>
         </div>
