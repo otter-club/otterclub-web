@@ -30,6 +30,12 @@ export default function Home() {
           </p>
           <p>{`Let's make waves, one game at a time!`}</p>
           <Link href="https://discord.gg/otterclub" target="_blank"></Link>
+          <p>
+            Email us:
+            <Link href="mailto:contact@otterclub.io">
+              <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold tracking-widest">{`contact@otterclub.io`}</code>
+            </Link>
+          </p>
         </div>
 
         <div className="flex gap-4 items-center justify-center text-3xl ">
