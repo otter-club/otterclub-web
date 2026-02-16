@@ -7,7 +7,7 @@
 * GitHub：[otter-club](https://github.com/otter-club)
 * Discord: [discord.gg/YWE6yFK5Bv](https://discord.gg/YWE6yFK5Bv)
 * Twitter: [@OtterClub_](https://twitter.com/OtterClub_)
-* QQ群: 831197219
+* QQ群: [831197219](https://qm.qq.com/q/TA6yc5k9sy)
 
 ## 👏 Welcome to Otter Club
 
@@ -16,4 +16,4 @@
 * GitHub：[otter-club](https://github.com/otter-club)
 * Discord: [discord.gg/YWE6yFK5Bv](https://discord.gg/YWE6yFK5Bv)
 * Twitter: [@OtterClub_](https://twitter.com/OtterClub_)
-* QQ Group: 831197219
+* QQ Group: [831197219](https://qm.qq.com/q/TA6yc5k9sy)
