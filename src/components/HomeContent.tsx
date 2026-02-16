@@ -24,6 +24,14 @@ const STEAM_LANG: Record<Locale, string> = {
   vi: "vietnamese",
   th: "thai",
   id: "indonesian",
+  de: "german",
+  "pt-BR": "brazilian",
+  pt: "portuguese",
+  it: "italian",
+  pl: "polish",
+  tr: "turkish",
+  ar: "arabic",
+  nl: "dutch",
 };
 
 function steamWidgetUrl(appId: string, name: string, locale: Locale) {

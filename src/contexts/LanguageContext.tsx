@@ -25,9 +25,17 @@ const HTML_LANG: Record<Locale, string> = {
   vi: "vi",
   th: "th",
   id: "id",
+  de: "de",
+  "pt-BR": "pt-BR",
+  pt: "pt",
+  it: "it",
+  pl: "pl",
+  tr: "tr",
+  ar: "ar",
+  nl: "nl",
 };
 
-const VALID_LOCALES: Locale[] = ["en", "zh", "zh-TW", "ja", "ko", "fr", "es", "es-419", "ru", "vi", "th", "id"];
+const VALID_LOCALES: Locale[] = ["en", "zh", "zh-TW", "ja", "ko", "fr", "es", "es-419", "ru", "vi", "th", "id", "de", "pt-BR", "pt", "it", "pl", "tr", "ar", "nl"];
 
 type LanguageContextType = {
   locale: Locale;
@@ -52,11 +60,13 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     setLocaleState(newLocale);
     localStorage.setItem(STORAGE_KEY, newLocale);
     document.documentElement.lang = HTML_LANG[newLocale];
+    document.documentElement.dir = newLocale === "ar" ? "rtl" : "ltr";
   }, []);
 
   useEffect(() => {
     if (mounted) {
       document.documentElement.lang = HTML_LANG[locale];
+      document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
     }
   }, [locale, mounted]);
 

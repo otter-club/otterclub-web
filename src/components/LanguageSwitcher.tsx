@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { LOCALE_LABELS, type Locale } from "@/lib/translations";
 
-const LOCALES: Locale[] = ["en", "zh", "zh-TW", "ja", "ko", "fr", "es", "es-419", "ru", "vi", "th", "id"];
+const LOCALES: Locale[] = ["en", "zh", "zh-TW", "ja", "ko", "fr", "es", "es-419", "ru", "vi", "th", "id", "de", "pt-BR", "pt", "it", "pl", "tr", "ar", "nl"];
 
 export function LanguageSwitcher() {
   const { locale, setLocale } = useLanguage();
@@ -50,7 +50,7 @@ export function LanguageSwitcher() {
                   setLocale(loc);
                   setOpen(false);
                 }}
-                className={`w-full px-4 py-2 text-left text-sm hover:bg-black/[.05] dark:hover:bg-white/[.08] first:rounded-t-lg last:rounded-b-lg ${
+                className={`w-full px-4 py-2 text-left text-sm hover:bg-black/[.05] dark:hover:bg-white/[.08] first:rounded-t-lg last:rounded-b-lg rtl:text-right ${
                   locale === loc ? "bg-black/[.05] dark:bg-white/[.08] font-medium" : ""
                 }`}>
                 {LOCALE_LABELS[loc]}
