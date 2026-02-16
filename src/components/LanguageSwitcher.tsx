@@ -27,7 +27,7 @@ export function LanguageSwitcher() {
   }, []);
 
   return (
-    <div ref={ref} className="fixed top-6 right-6 z-50">
+    <div ref={ref} className="absolute top-6 right-6 z-50">
       <button
         onClick={() => setOpen((o) => !o)}
         className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-full bg-black/[.06] dark:bg-white/[.08] hover:bg-black/[.1] dark:hover:bg-white/[.12] transition-colors duration-200"

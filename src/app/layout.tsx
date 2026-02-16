@@ -46,8 +46,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <LanguageProvider>
-          <LanguageSwitcher />
-          {children}
+          <div className="relative min-h-screen">
+            <LanguageSwitcher />
+            {children}
+          </div>
         </LanguageProvider>
       </body>
     </html>
