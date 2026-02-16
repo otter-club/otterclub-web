@@ -104,17 +104,7 @@ export default function Home() {
           <iframe src="https://store.steampowered.com/widget/2784960/Avian_Enigma/" width="380" height="190"></iframe>
         </div>
       </main>
-      <Link
-        href="https://www.producthunt.com/posts/otter-club?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-otter&#0045;club"
-        target="_blank">
-        <Image
-          src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=953516&theme=neutral&t=1744676497313"
-          alt="Otter&#0032;Club - A&#0032;homepage&#0032;of&#0032;Otter&#0032;Club&#0032;game&#0032;studio&#0046; | Product Hunt"
-          style={{ width: "250px", height: "54px" }}
-          width="250"
-          height="54"
-        />
-      </Link>
+
       <footer className="flex gap-6 flex-wrap items-center justify-center">
         <p className="text-sm">© 2021-{new Date().getFullYear()} Otter Club. All rights reserved.</p>
       </footer>
