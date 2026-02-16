@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -12,13 +12,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  themeColor: "#F6EFE5",
+};
+
 export const metadata: Metadata = {
   title: "Otter Club",
   description: "Otter Club is a community of developers who are passionate about creating games.",
   keywords: ["otter", "club", "games", "development", "indie", "community"],
   authors: [{ name: "Otter Club", url: "https://otterclub.io" }],
   creator: "Otter Club",
-  themeColor: "#F6EFE5",
   icons: {
     icon: "/img/otter_club_logo.png",
     shortcut: "/img/otter_club_logo.png",
