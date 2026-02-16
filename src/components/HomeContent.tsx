@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineGlobal } from "react-icons/ai";
@@ -41,11 +42,20 @@ function steamWidgetUrl(appId: string, name: string, locale: Locale) {
 export function HomeContent() {
   const { locale } = useLanguage();
   const t = translations[locale];
+  const [isLogoHovered, setIsLogoHovered] = useState(false);
 
   return (
     <div className="flex flex-col items-center justify-items-center min-h-screen p-8 md:pb-20 gap-16 font-[family-name:var(--font-geist-sans)]">
+      <div
+        className="fixed inset-0 -z-10 bg-repeat pointer-events-none transition-opacity duration-500 ease-in-out"
+        style={{
+          backgroundImage: "url(/img/otter_club_bg.jpg)",
+          opacity: isLogoHovered ? 1 : 0,
+        }}
+        aria-hidden
+      />
       <main className="flex flex-col gap-8 items-center justify-center grow">
-        <Link href="/">
+        <Link href="/" onMouseEnter={() => setIsLogoHovered(true)} onMouseLeave={() => setIsLogoHovered(false)}>
           <Image
             className="hover:shadow-[0_0_300px_#9f6d4a] transition-shadow duration-300 rounded-full size-36 md:size-64"
             src="/img/otter_club_logo.png"
@@ -56,7 +66,12 @@ export function HomeContent() {
           />
         </Link>
 
-        <div className="list-inside list-decimal w-full max-w-[400px] md:max-w-[650px] text-sm text-start font-[family-name:var(--font-geist-mono)]">
+        <div
+          className={`list-inside list-decimal w-full max-w-[400px] md:max-w-[650px] text-sm text-start font-[family-name:var(--font-geist-mono)] rounded-2xl p-6 transition-all duration-500 ease-out ${
+            isLogoHovered
+              ? "bg-[#f6efe5]/90 backdrop-blur-lg translate-y-0 shadow-[0_0_300px_#9f6d4a]"
+              : "bg-transparent shadow-none translate-y-0"
+          }`}>
           <h1 className="text-2xl font-bold">{t.brandName}</h1>
           <p>{t.tagline}</p>
           <p className="text-amber-800/90">{t.greeting}</p>
