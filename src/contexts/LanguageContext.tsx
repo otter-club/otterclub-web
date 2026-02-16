@@ -12,6 +12,18 @@ import type { Locale } from "@/lib/translations";
 
 const STORAGE_KEY = "otterclub-locale";
 
+const HTML_LANG: Record<Locale, string> = {
+  en: "en",
+  zh: "zh-CN",
+  "zh-TW": "zh-TW",
+  ja: "ja",
+  ko: "ko",
+  fr: "fr",
+  es: "es",
+};
+
+const VALID_LOCALES: Locale[] = ["en", "zh", "zh-TW", "ja", "ko", "fr", "es"];
+
 type LanguageContextType = {
   locale: Locale;
   setLocale: (locale: Locale) => void;
@@ -25,7 +37,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY) as Locale | null;
-    if (stored === "en" || stored === "zh") {
+    if (stored && VALID_LOCALES.includes(stored)) {
       setLocaleState(stored);
     }
     setMounted(true);
@@ -34,12 +46,12 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const setLocale = useCallback((newLocale: Locale) => {
     setLocaleState(newLocale);
     localStorage.setItem(STORAGE_KEY, newLocale);
-    document.documentElement.lang = newLocale === "zh" ? "zh-CN" : "en";
+    document.documentElement.lang = HTML_LANG[newLocale];
   }, []);
 
   useEffect(() => {
     if (mounted) {
-      document.documentElement.lang = locale === "zh" ? "zh-CN" : "en";
+      document.documentElement.lang = HTML_LANG[locale];
     }
   }, [locale, mounted]);
 

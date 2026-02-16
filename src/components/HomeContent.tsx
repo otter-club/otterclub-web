@@ -9,9 +9,19 @@ import { MdAlternateEmail } from "react-icons/md";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/lib/translations";
 
-const STEAM_LANG = { en: "english", zh: "schinese" } as const;
+import type { Locale } from "@/lib/translations";
 
-function steamWidgetUrl(appId: string, name: string, locale: "en" | "zh") {
+const STEAM_LANG: Record<Locale, string> = {
+  en: "english",
+  zh: "schinese",
+  "zh-TW": "tchinese",
+  ja: "japanese",
+  ko: "koreana",
+  fr: "french",
+  es: "spanish",
+};
+
+function steamWidgetUrl(appId: string, name: string, locale: Locale) {
   return `https://store.steampowered.com/widget/${appId}/${name}/?l=${STEAM_LANG[locale]}`;
 }
 
@@ -26,7 +36,7 @@ export function HomeContent() {
           <Image
             className="hover:shadow-[0_0_300px_#9f6d4a] transition-shadow duration-300 rounded-full size-36 md:size-64"
             src="/img/otter_club_logo.png"
-            alt="Otter Club logo"
+            alt={t.brandName}
             width={256}
             height={256}
             priority
@@ -34,7 +44,7 @@ export function HomeContent() {
         </Link>
 
         <div className="list-inside list-decimal w-full max-w-[400px] md:max-w-[650px] text-sm text-left font-[family-name:var(--font-geist-mono)]">
-          <h1 className="text-2xl font-bold">Otter Club</h1>
+          <h1 className="text-2xl font-bold">{t.brandName}</h1>
           <p>{t.tagline}</p>
           <p>{t.intro}</p>
           <p>{t.outro}</p>
