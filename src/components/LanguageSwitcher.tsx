@@ -4,7 +4,12 @@ import { useState, useRef, useEffect } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { LOCALE_LABELS, type Locale } from "@/lib/translations";
 
-const LOCALES: Locale[] = ["en", "zh", "zh-TW", "ja", "ko", "fr", "es", "es-419", "ru", "vi", "th", "id", "de", "pt-BR", "pt", "it", "pl", "tr", "ar", "nl"];
+// 常规排序：英语 → 中文 → 日韩 → 欧洲语言(按字母) → 其他
+const LOCALES: Locale[] = [
+  "en", "zh", "zh-TW", "ja", "ko",
+  "de", "es", "es-419", "fr", "it", "nl", "pl", "pt", "pt-BR", "ru",
+  "ar", "id", "th", "tr", "vi",
+];
 
 export function LanguageSwitcher() {
   const { locale, setLocale } = useLanguage();
