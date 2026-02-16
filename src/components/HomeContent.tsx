@@ -56,7 +56,7 @@ export function HomeContent() {
           />
         </Link>
 
-        <div className="list-inside list-decimal w-full max-w-[400px] md:max-w-[650px] text-sm text-left font-[family-name:var(--font-geist-mono)]">
+        <div className="list-inside list-decimal w-full max-w-[400px] md:max-w-[650px] text-sm text-start font-[family-name:var(--font-geist-mono)]">
           <h1 className="text-2xl font-bold">{t.brandName}</h1>
           <p>{t.tagline}</p>
           <p className="text-amber-800/90">{t.greeting}</p>
