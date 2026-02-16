@@ -20,9 +20,13 @@ const HTML_LANG: Record<Locale, string> = {
   ko: "ko",
   fr: "fr",
   es: "es",
+  ru: "ru",
+  vi: "vi",
+  th: "th",
+  id: "id",
 };
 
-const VALID_LOCALES: Locale[] = ["en", "zh", "zh-TW", "ja", "ko", "fr", "es"];
+const VALID_LOCALES: Locale[] = ["en", "zh", "zh-TW", "ja", "ko", "fr", "es", "ru", "vi", "th", "id"];
 
 type LanguageContextType = {
   locale: Locale;

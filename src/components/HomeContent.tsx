@@ -19,6 +19,10 @@ const STEAM_LANG: Record<Locale, string> = {
   ko: "koreana",
   fr: "french",
   es: "spanish",
+  ru: "russian",
+  vi: "vietnamese",
+  th: "thai",
+  id: "indonesian",
 };
 
 function steamWidgetUrl(appId: string, name: string, locale: Locale) {
@@ -46,7 +50,7 @@ export function HomeContent() {
         <div className="list-inside list-decimal w-full max-w-[400px] md:max-w-[650px] text-sm text-left font-[family-name:var(--font-geist-mono)]">
           <h1 className="text-2xl font-bold">{t.brandName}</h1>
           <p>{t.tagline}</p>
-          <p className="text-amber-800/90 dark:text-amber-200/90">{t.greeting}</p>
+          <p className="text-amber-800/90">{t.greeting}</p>
           <p>{t.intro}</p>
           <p>{t.outro}</p>
           <Link href="https://discord.gg/otterclub" target="_blank"></Link>

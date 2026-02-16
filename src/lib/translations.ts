@@ -1,4 +1,4 @@
-export type Locale = "en" | "zh" | "zh-TW" | "ja" | "ko" | "fr" | "es";
+export type Locale = "en" | "zh" | "zh-TW" | "ja" | "ko" | "fr" | "es" | "ru" | "vi" | "th" | "id";
 
 export const LOCALE_LABELS: Record<Locale, string> = {
   en: "EN",
@@ -8,6 +8,10 @@ export const LOCALE_LABELS: Record<Locale, string> = {
   ko: "한국어",
   fr: "FR",
   es: "ES",
+  ru: "Рус",
+  vi: "VN",
+  th: "ไทย",
+  id: "ID",
 };
 
 export const translations = {
@@ -142,6 +146,82 @@ export const translations = {
       discord: "Discord",
       twitter: "Twitter",
       qq: "Grupo QQ: 831197219",
+    },
+  },
+  ru: {
+    brandName: "Otter Club",
+    tagline: "Где усы встречаются с чудом!",
+    greeting: "Привет всем очаровательным выдрам по всему миру! 🦦",
+    intro:
+      "Мы — команда разработчиков, влюблённых в выдр, создаём уютные инди-игры — полные занимательных головоломок, нарисованных вручную приключений и тёплых историй. Нырните в миры, созданные лапками, страстью и щепоткой речной озорства! 🌊✨",
+    outro: "Давайте творить волны, одна игра за раз!",
+    emailUs: "Напишите нам:",
+    footer: "© 2021-{year} Otter Club. Все права защищены.",
+    titles: {
+      website: "Сайт",
+      email: "Email",
+      facebook: "Facebook",
+      github: "GitHub",
+      discord: "Discord",
+      twitter: "Twitter",
+      qq: "QQ группа: 831197219",
+    },
+  },
+  vi: {
+    brandName: "Otter Club",
+    tagline: "Nơi râu ria gặp gỡ điều kỳ diệu!",
+    greeting: "Xin chào tất cả những chú rái cá đáng yêu trên toàn thế giới! 🦦",
+    intro:
+      "Chúng tôi là đội ngũ nhà phát triển yêu thích rái cá, tạo ra những game indie ấm áp—đầy câu đố vui nhộn, phiêu lưu vẽ tay và câu chuyện ấm lòng. Hãy lặn vào thế giới được tạo nên bằng móng vuốt, đam mê và một chút tinh nghịch bên bờ sông! 🌊✨",
+    outro: "Hãy tạo sóng, từng game một!",
+    emailUs: "Liên hệ:",
+    footer: "© 2021-{year} Otter Club. Bảo lưu mọi quyền.",
+    titles: {
+      website: "Trang web",
+      email: "Email",
+      facebook: "Facebook",
+      github: "GitHub",
+      discord: "Discord",
+      twitter: "Twitter",
+      qq: "QQ Group: 831197219",
+    },
+  },
+  th: {
+    brandName: "Otter Club",
+    tagline: "ที่ซึ่งหนวดพบกับความมหัศจรรย์!",
+    greeting: "สวัสดีทุกนากน้อยน่ารักทั่วโลก! 🦦",
+    intro:
+      "เราเป็นทีมนักพัฒนาที่รักนาก สร้างเกมอินดี้อบอุ่น—เต็มไปด้วยปริศนาแสนสนุก การผจญภัยวาดมือ และเรื่องราวอบอุ่นหัวใจ ดำดิ่งสู่โลกที่สร้างด้วยอุ้งเท้า ความหลงใหล และความซุกซนริมแม่น้ำนิดหน่อย! 🌊✨",
+    outro: "มาสร้างคลื่นกันเถอะ ทีละเกม!",
+    emailUs: "ติดต่อเรา:",
+    footer: "© 2021-{year} Otter Club. สงวนลิขสิทธิ์",
+    titles: {
+      website: "เว็บไซต์",
+      email: "อีเมล",
+      facebook: "Facebook",
+      github: "GitHub",
+      discord: "Discord",
+      twitter: "Twitter",
+      qq: "QQ Group: 831197219",
+    },
+  },
+  id: {
+    brandName: "Otter Club",
+    tagline: "Tempat kumis bertemu keajaiban!",
+    greeting: "Halo untuk semua berang-berang menggemaskan di seluruh dunia! 🦦",
+    intro:
+      "Kami adalah tim pengembang penggemar berang-berang, menciptakan game indie yang nyaman—penuh teka-teki menyenangkan, petualangan lukisan tangan, dan cerita yang menghangatkan hati. Selami dunia yang dibuat dengan cakar, gairah, dan sedikit kenakalan tepi sungai! 🌊✨",
+    outro: "Mari buat gelombang, satu game pada satu waktu!",
+    emailUs: "Hubungi kami:",
+    footer: "© 2021-{year} Otter Club. Hak cipta dilindungi.",
+    titles: {
+      website: "Situs web",
+      email: "Email",
+      facebook: "Facebook",
+      github: "GitHub",
+      discord: "Discord",
+      twitter: "Twitter",
+      qq: "QQ Group: 831197219",
     },
   },
 } as const satisfies Record<

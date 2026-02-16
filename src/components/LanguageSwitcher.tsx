@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { LOCALE_LABELS, type Locale } from "@/lib/translations";
 
-const LOCALES: Locale[] = ["en", "zh", "zh-TW", "ja", "ko", "fr", "es"];
+const LOCALES: Locale[] = ["en", "zh", "zh-TW", "ja", "ko", "fr", "es", "ru", "vi", "th", "id"];
 
 export function LanguageSwitcher() {
   const { locale, setLocale } = useLanguage();
@@ -42,7 +42,7 @@ export function LanguageSwitcher() {
       {open && (
         <ul
           role="listbox"
-          className="absolute right-0 mt-1.5 py-1 min-w-[100px] rounded-lg bg-white dark:bg-neutral-900 shadow-lg border border-black/5 dark:border-white/10">
+          className="absolute right-0 mt-1.5 py-1 min-w-[100px] max-h-[min(50vh,320px)] overflow-y-auto rounded-lg bg-white dark:bg-neutral-900 shadow-lg border border-black/5 dark:border-white/10">
           {LOCALES.map((loc) => (
             <li key={loc} role="option" aria-selected={locale === loc}>
               <button
