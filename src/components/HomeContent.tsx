@@ -54,7 +54,7 @@ export function HomeContent() {
         }}
         aria-hidden
       />
-      <main className="flex flex-col gap-8 items-center justify-center grow">
+      <main className="flex flex-col gap-4 items-center justify-center grow">
         <Link href="/" onMouseEnter={() => setIsLogoHovered(true)} onMouseLeave={() => setIsLogoHovered(false)}>
           <Image
             className="hover:shadow-[0_0_300px_#9f6d4a] transition-shadow duration-300 rounded-full size-36 md:size-64"
@@ -69,7 +69,7 @@ export function HomeContent() {
         <div
           className={`list-inside list-decimal w-full max-w-[400px] md:max-w-[650px] text-sm text-start font-[family-name:var(--font-geist-mono)] rounded-2xl p-6 transition-all duration-500 ease-out ${
             isLogoHovered
-              ? "bg-[#f6efe5]/90 backdrop-blur-lg translate-y-0 shadow-[0_0_300px_#9f6d4a]"
+              ? "bg-[#f6efe5]/90 backdrop-blur-lg translate-y-0 shadow-[0_0_100px_#9f6d4a]"
               : "bg-transparent shadow-none translate-y-0"
           }`}>
           <h1 className="text-2xl font-bold">{t.brandName}</h1>
@@ -86,7 +86,12 @@ export function HomeContent() {
           </p>
         </div>
 
-        <div className="flex gap-4 items-center justify-center text-3xl ">
+        <div
+          className={`flex gap-4 items-center justify-center text-3xl rounded-2xl p-4 transition-all duration-500 ease-out ${
+            isLogoHovered
+              ? "bg-[#f6efe5]/90 backdrop-blur-lg translate-y-0 shadow-[0_0_100px_#9f6d4a]"
+              : "bg-transparent shadow-none translate-y-0"
+          }`}>
           <Link
             href="https://otterclub.io/"
             target="_blank"
