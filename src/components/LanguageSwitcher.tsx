@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { LOCALE_LABELS, type Locale } from "@/lib/translations";
 
-const LOCALES: Locale[] = ["en", "zh", "zh-TW", "ja", "ko", "fr", "es", "ru", "vi", "th", "id"];
+const LOCALES: Locale[] = ["en", "zh", "zh-TW", "ja", "ko", "fr", "es", "es-419", "ru", "vi", "th", "id"];
 
 export function LanguageSwitcher() {
   const { locale, setLocale } = useLanguage();

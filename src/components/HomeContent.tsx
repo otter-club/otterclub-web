@@ -19,6 +19,7 @@ const STEAM_LANG: Record<Locale, string> = {
   ko: "koreana",
   fr: "french",
   es: "spanish",
+  "es-419": "latam",
   ru: "russian",
   vi: "vietnamese",
   th: "thai",

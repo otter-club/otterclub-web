@@ -1,4 +1,4 @@
-export type Locale = "en" | "zh" | "zh-TW" | "ja" | "ko" | "fr" | "es" | "ru" | "vi" | "th" | "id";
+export type Locale = "en" | "zh" | "zh-TW" | "ja" | "ko" | "fr" | "es" | "es-419" | "ru" | "vi" | "th" | "id";
 
 export const LOCALE_LABELS: Record<Locale, string> = {
   en: "EN",
@@ -7,7 +7,8 @@ export const LOCALE_LABELS: Record<Locale, string> = {
   ja: "日本語",
   ko: "한국어",
   fr: "FR",
-  es: "ES",
+  es: "西班牙",
+  "es-419": "拉美",
   ru: "Рус",
   vi: "VN",
   th: "ไทย",
@@ -137,6 +138,25 @@ export const translations = {
       "Somos un equipo de desarrolladores amantes de las nutrias, creando acogedores juegos indie—llenos de rompecabezas divertidos, aventuras pintadas a mano e historias conmovedoras. ¡Sumérgete en mundos hechos con patas, pasión y una pizca de travesura ribereña! 🌊✨",
     outro: "¡Hagamos olas, un juego a la vez!",
     emailUs: "Contáctenos:",
+    footer: "© 2021-{year} Otter Club. Todos los derechos reservados.",
+    titles: {
+      website: "Sitio web",
+      email: "Correo",
+      facebook: "Facebook",
+      github: "GitHub",
+      discord: "Discord",
+      twitter: "Twitter",
+      qq: "Grupo QQ: 831197219",
+    },
+  },
+  "es-419": {
+    brandName: "Otter Club",
+    tagline: "¡Donde los bigotes encuentran la maravilla!",
+    greeting: "¡Hola a todas las adorables nutrias del mundo! 🦦",
+    intro:
+      "Somos un equipo de desarrolladores amantes de las nutrias, creando juegos indie acogedores—llenos de rompecabezas divertidos, aventuras pintadas a mano e historias conmovedoras. ¡Sumérgete en mundos hechos con patitas, pasión y una pizca de travesura ribereña! 🌊✨",
+    outro: "¡Hagamos olas, un juego a la vez!",
+    emailUs: "Contáctanos:",
     footer: "© 2021-{year} Otter Club. Todos los derechos reservados.",
     titles: {
       website: "Sitio web",
