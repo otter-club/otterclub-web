@@ -81,11 +81,13 @@ export default function Home() {
             title="Twitter">
             <FaXTwitter />
           </Link>
-          <div
+          <Link
+            href="https://qm.qq.com/q/Um2QKJKlua"
+            target="_blank"
             className="cursor-pointer hover:text-[#D6CEC0] transition-colors duration-300"
             title="QQ Group: 831197219">
             <FaQq />
-          </div>
+          </Link>
         </div>
 
         <div className="hidden md:flex gap-4 items-center flex-col sm:flex-row">
