@@ -42,7 +42,7 @@ export function LanguageSwitcher() {
       {open && (
         <ul
           role="listbox"
-          className="absolute right-0 mt-1.5 py-1 min-w-[100px] max-h-[min(50vh,320px)] overflow-y-auto rounded-lg bg-white dark:bg-neutral-900 shadow-lg border border-black/5 dark:border-white/10">
+          className="absolute right-0 mt-1.5 py-1 min-w-[180px] max-h-[min(50vh,320px)] overflow-y-auto rounded-lg bg-white dark:bg-neutral-900 shadow-lg border border-black/5 dark:border-white/10">
           {LOCALES.map((loc) => (
             <li key={loc} role="option" aria-selected={locale === loc}>
               <button

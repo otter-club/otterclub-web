@@ -1,18 +1,18 @@
 export type Locale = "en" | "zh" | "zh-TW" | "ja" | "ko" | "fr" | "es" | "es-419" | "ru" | "vi" | "th" | "id";
 
 export const LOCALE_LABELS: Record<Locale, string> = {
-  en: "EN",
-  zh: "简中",
-  "zh-TW": "繁中",
+  en: "English",
+  zh: "简体中文",
+  "zh-TW": "繁體中文",
   ja: "日本語",
   ko: "한국어",
-  fr: "FR",
-  es: "西班牙",
-  "es-419": "拉美",
-  ru: "Рус",
-  vi: "VN",
+  fr: "Français",
+  es: "Español",
+  "es-419": "Español (Latinoamérica)",
+  ru: "Русский",
+  vi: "Tiếng Việt",
   th: "ไทย",
-  id: "ID",
+  id: "Bahasa Indonesia",
 };
 
 export const translations = {
