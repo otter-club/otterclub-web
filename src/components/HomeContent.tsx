@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { FaFacebook, FaGithub, FaDiscord, FaQq } from "react-icons/fa";
+import { AiOutlineBilibili } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdAlternateEmail } from "react-icons/md";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -133,6 +134,13 @@ export function HomeContent() {
             className="hover:text-[#D6CEC0] transition-colors duration-300"
             title={t.titles.twitter}>
             <FaXTwitter />
+          </Link>
+          <Link
+            href="https://space.bilibili.com/3546714132711766"
+            target="_blank"
+            className="cursor-pointer hover:text-[#D6CEC0] transition-colors duration-300"
+            title={t.titles.bilibili}>
+            <AiOutlineBilibili />
           </Link>
           <Link
             href="https://qm.qq.com/q/Um2QKJKlua"

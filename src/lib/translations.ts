@@ -1,4 +1,24 @@
-export type Locale = "en" | "zh" | "zh-TW" | "ja" | "ko" | "fr" | "es" | "es-419" | "ru" | "vi" | "th" | "id" | "de" | "pt-BR" | "pt" | "it" | "pl" | "tr" | "ar" | "nl";
+export type Locale =
+  | "en"
+  | "zh"
+  | "zh-TW"
+  | "ja"
+  | "ko"
+  | "fr"
+  | "es"
+  | "es-419"
+  | "ru"
+  | "vi"
+  | "th"
+  | "id"
+  | "de"
+  | "pt-BR"
+  | "pt"
+  | "it"
+  | "pl"
+  | "tr"
+  | "ar"
+  | "nl";
 
 export const LOCALE_LABELS: Record<Locale, string> = {
   en: "English",
@@ -40,6 +60,7 @@ export const translations = {
       github: "GitHub",
       discord: "Discord",
       twitter: "Twitter",
+      bilibili: "Bilibili",
       qq: "QQ Group: 831197219",
     },
   },
@@ -59,6 +80,7 @@ export const translations = {
       github: "GitHub",
       discord: "Discord",
       twitter: "Twitter",
+      bilibili: "哔哩哔哩",
       qq: "QQ 群：831197219",
     },
   },
@@ -78,6 +100,7 @@ export const translations = {
       github: "GitHub",
       discord: "Discord",
       twitter: "Twitter",
+      bilibili: "哔哩哔哩",
       qq: "QQ 群：831197219",
     },
   },
@@ -97,6 +120,7 @@ export const translations = {
       github: "GitHub",
       discord: "Discord",
       twitter: "Twitter",
+      bilibili: "Bilibili",
       qq: "QQ グループ：831197219",
     },
   },
@@ -116,6 +140,7 @@ export const translations = {
       github: "GitHub",
       discord: "Discord",
       twitter: "Twitter",
+      bilibili: "Bilibili",
       qq: "QQ 그룹: 831197219",
     },
   },
@@ -135,6 +160,7 @@ export const translations = {
       github: "GitHub",
       discord: "Discord",
       twitter: "Twitter",
+      bilibili: "Bilibili",
       qq: "Groupe QQ : 831197219",
     },
   },
@@ -154,6 +180,7 @@ export const translations = {
       github: "GitHub",
       discord: "Discord",
       twitter: "Twitter",
+      bilibili: "Bilibili",
       qq: "Grupo QQ: 831197219",
     },
   },
@@ -173,6 +200,7 @@ export const translations = {
       github: "GitHub",
       discord: "Discord",
       twitter: "Twitter",
+      bilibili: "Bilibili",
       qq: "Grupo QQ: 831197219",
     },
   },
@@ -192,6 +220,7 @@ export const translations = {
       github: "GitHub",
       discord: "Discord",
       twitter: "Twitter",
+      bilibili: "Bilibili",
       qq: "QQ группа: 831197219",
     },
   },
@@ -211,6 +240,7 @@ export const translations = {
       github: "GitHub",
       discord: "Discord",
       twitter: "Twitter",
+      bilibili: "Bilibili",
       qq: "QQ Group: 831197219",
     },
   },
@@ -230,6 +260,7 @@ export const translations = {
       github: "GitHub",
       discord: "Discord",
       twitter: "Twitter",
+      bilibili: "Bilibili",
       qq: "QQ Group: 831197219",
     },
   },
@@ -249,6 +280,7 @@ export const translations = {
       github: "GitHub",
       discord: "Discord",
       twitter: "Twitter",
+      bilibili: "Bilibili",
       qq: "QQ Group: 831197219",
     },
   },
@@ -268,6 +300,7 @@ export const translations = {
       github: "GitHub",
       discord: "Discord",
       twitter: "Twitter",
+      bilibili: "Bilibili",
       qq: "QQ-Gruppe: 831197219",
     },
   },
@@ -287,6 +320,7 @@ export const translations = {
       github: "GitHub",
       discord: "Discord",
       twitter: "Twitter",
+      bilibili: "Bilibili",
       qq: "Grupo QQ: 831197219",
     },
   },
@@ -306,6 +340,7 @@ export const translations = {
       github: "GitHub",
       discord: "Discord",
       twitter: "Twitter",
+      bilibili: "Bilibili",
       qq: "Grupo QQ: 831197219",
     },
   },
@@ -325,6 +360,7 @@ export const translations = {
       github: "GitHub",
       discord: "Discord",
       twitter: "Twitter",
+      bilibili: "Bilibili",
       qq: "Gruppo QQ: 831197219",
     },
   },
@@ -344,6 +380,7 @@ export const translations = {
       github: "GitHub",
       discord: "Discord",
       twitter: "Twitter",
+      bilibili: "Bilibili",
       qq: "Grupa QQ: 831197219",
     },
   },
@@ -363,6 +400,7 @@ export const translations = {
       github: "GitHub",
       discord: "Discord",
       twitter: "Twitter",
+      bilibili: "Bilibili",
       qq: "QQ Grubu: 831197219",
     },
   },
@@ -382,6 +420,7 @@ export const translations = {
       github: "GitHub",
       discord: "Discord",
       twitter: "Twitter",
+      bilibili: "Bilibili",
       qq: "مجموعة QQ: 831197219",
     },
   },
@@ -401,6 +440,7 @@ export const translations = {
       github: "GitHub",
       discord: "Discord",
       twitter: "Twitter",
+      bilibili: "Bilibili",
       qq: "QQ-groep: 831197219",
     },
   },
@@ -414,6 +454,15 @@ export const translations = {
     outro: string;
     emailUs: string;
     footer: string;
-    titles: { website: string; email: string; facebook: string; github: string; discord: string; twitter: string; qq: string };
+    titles: {
+      website: string;
+      email: string;
+      facebook: string;
+      github: string;
+      discord: string;
+      twitter: string;
+      bilibili: string;
+      qq: string;
+    };
   }
 >;
