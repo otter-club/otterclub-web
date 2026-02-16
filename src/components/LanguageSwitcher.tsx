@@ -6,9 +6,26 @@ import { LOCALE_LABELS, type Locale } from "@/lib/translations";
 
 // 常规排序：英语 → 中文 → 日韩 → 欧洲语言(按字母) → 其他
 const LOCALES: Locale[] = [
-  "en", "zh", "zh-TW", "ja", "ko",
-  "de", "es", "es-419", "fr", "it", "nl", "pl", "pt", "pt-BR", "ru",
-  "ar", "id", "th", "tr", "vi",
+  "en",
+  "zh",
+  "zh-TW",
+  "ja",
+  "ko",
+  "de",
+  "es",
+  "es-419",
+  "fr",
+  "it",
+  "nl",
+  "pl",
+  "pt",
+  "pt-BR",
+  "ru",
+  "ar",
+  "id",
+  "th",
+  "tr",
+  "vi",
 ];
 
 export function LanguageSwitcher() {
@@ -30,7 +47,7 @@ export function LanguageSwitcher() {
     <div ref={ref} className="absolute top-6 right-6 z-50">
       <button
         onClick={() => setOpen((o) => !o)}
-        className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-full bg-black/[.06] dark:bg-white/[.08] hover:bg-black/[.1] dark:hover:bg-white/[.12] transition-colors duration-200"
+        className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-full cursor-pointer bg-black/[.06] dark:bg-white/[.08] hover:bg-black/[.1] dark:hover:bg-white/[.12] transition-colors duration-200"
         title="Select language"
         aria-expanded={open}
         aria-haspopup="listbox"
