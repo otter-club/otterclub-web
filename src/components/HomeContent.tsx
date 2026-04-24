@@ -152,6 +152,13 @@ export function HomeContent() {
         </div>
 
         <div className="hidden md:flex gap-4 items-center flex-col sm:flex-row">
+          <iframe src={steamWidgetUrl("4610300", "_", locale)} width="646" height="190"></iframe>
+        </div>
+        <div className="flex md:hidden gap-4 items-center flex-col sm:flex-row">
+          <iframe src={steamWidgetUrl("4610300", "_", locale)} width="380" height="190"></iframe>
+        </div>
+
+        <div className="hidden md:flex gap-4 items-center flex-col sm:flex-row">
           <iframe src={steamWidgetUrl("2616200", "Miss_Peacock", locale)} width="646" height="190"></iframe>
         </div>
         <div className="flex md:hidden gap-4 items-center flex-col sm:flex-row">
