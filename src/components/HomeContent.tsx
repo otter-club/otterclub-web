@@ -81,8 +81,8 @@ export function HomeContent() {
           <Link href="https://discord.gg/otterclub" target="_blank"></Link>
           <p>
             {t.emailUs}{" "}
-            <Link href="mailto:contact@otterclub.io">
-              <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold tracking-widest">{`contact@otterclub.io`}</code>
+            <Link href="mailto:292340961@qq.com">
+              <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold tracking-widest">{`292340961@qq.com`}</code>
             </Link>
           </p>
         </div>
@@ -101,7 +101,7 @@ export function HomeContent() {
             <AiOutlineGlobal />
           </Link>
           <Link
-            href="mailto:contact@otterclub.io"
+            href="mailto:292340961@qq.com"
             target="_blank"
             className="hover:text-[#D6CEC0] transition-colors duration-300"
             title={t.titles.email}>
